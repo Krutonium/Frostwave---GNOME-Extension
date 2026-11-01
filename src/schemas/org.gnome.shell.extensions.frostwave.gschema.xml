@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="frostwave">
+  <schema id="org.gnome.shell.extensions.frostwave" path="/org/gnome/shell/extensions/frostwave/">
+
+    <!-- Desktop widget -->
+    <key name="show-desktop-widget" type="b">
+      <default>true</default>
+      <summary>Show the desktop widget</summary>
+    </key>
+    <key name="widget-layer" type="s">
+      <choices>
+        <choice value="desktop"/>
+        <choice value="above"/>
+      </choices>
+      <default>'desktop'</default>
+      <summary>Widget layer</summary>
+      <description>“desktop” keeps the widget on the desktop below all windows, “above” keeps it above windows.</description>
+    </key>
+    <key name="widget-x" type="i">
+      <default>-1</default>
+      <summary>Horizontal widget position</summary>
+      <description>Position of the widget in logical pixels. A negative value places it at the default position.</description>
+    </key>
+    <key name="widget-y" type="i">
+      <default>-1</default>
+      <summary>Vertical widget position</summary>
+      <description>Position of the widget in logical pixels. A negative value places it at the default position.</description>
+    </key>
+    <key name="lock-position" type="b">
+      <default>false</default>
+      <summary>Prevent the widget from being dragged</summary>
+    </key>
+    <key name="widget-scale" type="i">
+      <range min="70" max="160"/>
+      <default>100</default>
+      <summary>Widget size in percent</summary>
+    </key>
+
+    <!-- Appearance -->
+    <key name="background-style" type="s">
+      <choices>
+        <choice value="glass"/>
+        <choice value="artwork"/>
+      </choices>
+      <default>'glass'</default>
+      <summary>Background style</summary>
+      <description>“glass” blurs whatever is behind the widget, “artwork” uses the blurred album art.</description>
+    </key>
+    <key name="tint" type="s">
+      <choices>
+        <choice value="dark"/>
+        <choice value="light"/>
+        <choice value="adaptive"/>
+      </choices>
+      <default>'dark'</default>
+      <summary>Glass tint</summary>
+      <description>“adaptive” tints the glass with a color taken from the album art.</description>
+    </key>
+    <key name="background-opacity" type="i">
+      <range min="0" max="100"/>
+      <default>40</default>
+      <summary>Background opacity in percent</summary>
+      <description>How strongly the tint (or the album art) covers the frosted background. 0 is fully transparent.</description>
+    </key>
+    <key name="blur-radius" type="i">
+      <range min="0" max="60"/>
+      <default>30</default>
+      <summary>Blur radius</summary>
+    </key>
+    <key name="corner-radius" type="i">
+      <range min="0" max="40"/>
+      <default>22</default>
+      <summary>Corner radius</summary>
+    </key>
+    <key name="show-progress" type="b">
+      <default>true</default>
+      <summary>Show the seek bar</summary>
+    </key>
+    <key name="show-volume" type="b">
+      <default>true</default>
+      <summary>Show the volume slider</summary>
+    </key>
+
+    <!-- Top bar -->
+    <key name="show-panel-button" type="b">
+      <default>true</default>
+      <summary>Show a button in the top bar</summary>
+    </key>
+    <key name="panel-position" type="s">
+      <choices>
+        <choice value="left"/>
+        <choice value="center"/>
+        <choice value="right"/>
+      </choices>
+      <default>'right'</default>
+      <summary>Top bar button position</summary>
+    </key>
+    <key name="panel-show-title" type="b">
+      <default>true</default>
+      <summary>Show the song title in the top bar</summary>
+    </key>
+
+    <!-- Players -->
+    <key name="other-players" type="b">
+      <default>false</default>
+      <summary>Control other media players</summary>
+      <description>Also show media players other than Spotify, such as web browsers.</description>
+    </key>
+    <key name="hide-when-inactive" type="b">
+      <default>false</default>
+      <summary>Hide when no player is running</summary>
+    </key>
+  </schema>
+</schemalist>

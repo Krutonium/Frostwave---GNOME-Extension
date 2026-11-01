@@ -1,0 +1,4 @@
+build/
+*.zip
+src/schemas/gschemas.compiled
+node_modules/
