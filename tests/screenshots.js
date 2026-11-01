@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-// Automation script that renders the screenshots used in the README:
-//   AUTOMATION_SCRIPT=tests/screenshots.js tests/run-headless.sh docs/screenshots
+// Automation script that renders screenshots of each background style:
+//   AUTOMATION_SCRIPT=tests/screenshots.js tests/run-headless.sh build/style-screenshots
 
 import Gio from 'gi://Gio';
 import GLib from 'gi://GLib';

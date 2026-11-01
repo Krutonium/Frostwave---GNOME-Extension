@@ -4,11 +4,7 @@ A frosted-glass music widget for the GNOME desktop. It shows what's playing in
 Spotify — cover art, title, artist and album — with all the playback controls,
 right on your desktop.
 
-![Frostwave on the desktop](docs/screenshots/desktop.png)
-
-| Frosted glass | Album color tint | Light glass | Album art |
-|:---:|:---:|:---:|:---:|
-| ![Dark glass](docs/screenshots/glass-dark.png) | ![Adaptive tint](docs/screenshots/glass-adaptive.png) | ![Light glass](docs/screenshots/glass-light.png) | ![Album art background](docs/screenshots/artwork.png) |
+![Frostwave playing a song from Spotify](docs/screenshots/frostwave.png)
 
 ## Features
 
@@ -93,7 +89,7 @@ src/
 tests/
 ├── run-headless.sh      runs the extension in a throwaway headless GNOME Shell
 ├── automation.js        clicks through the widget and checks the results
-├── screenshots.js       renders the screenshots above
+├── screenshots.js       renders screenshots of each background style
 └── mock-player.js       a fake Spotify MPRIS player
 ```
 
